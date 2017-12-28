@@ -6,39 +6,38 @@ xmlns:web="http://java.sun.com/xml/ns/javaee"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
 version="2.5">
   <servlet>
-    <servlet-name>HelloServlet_url_pattern</servlet-name>
-    <servlet-class>servlet.HelloServlet_url_pattern</servlet-class>
+    <servlet-name>Forward_ServletJsp</servlet-name>
+    <servlet-class>servlet.HelloServletOut2</servlet-class>
   </servlet>
+  <servlet-mapping>
+    <servlet-name>Forward_ServletJsp</servlet-name>
+    <url-pattern>/Forward_ServletJsp</url-pattern>
+  </servlet-mapping>
   
   <servlet>
-    <servlet-name>HelloServlet_jsp_html</servlet-name>
-    <servlet-class>servlet.HelloServlet_jsp_html</servlet-class>
+    <servlet-name>Forward_ServletOut</servlet-name>
+    <servlet-class>servlet.HelloServletOut1</servlet-class>
     <init-param>
       <param-name>computer</param-name>
       <param-value>LENOVO</param-value>
     </init-param>
   </servlet>
+  <servlet-mapping>
+    <servlet-name>Forward_ServletOut</servlet-name>
+    <url-pattern>/Forward_ServletOut</url-pattern>
+  </servlet-mapping>
   
   <servlet>
-    <servlet-name>JSPF</servlet-name>
-    <jsp-file>/Xml_Jspfile_Init.jsp</jsp-file>
+    <servlet-name>Forward_Jsp</servlet-name>
+    <jsp-file>/ForwardJsp.jsp</jsp-file>
     <init-param>
       <param-name>computer</param-name>
       <param-value>LENOVO</param-value>
     </init-param>
   </servlet>
-  
   <servlet-mapping>
-    <servlet-name>HelloServlet_url_pattern</servlet-name>
-    <url-pattern>/HUP</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>HelloServlet_jsp_html</servlet-name>
-    <url-pattern>/HJH</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>JSPF</servlet-name>
-    <url-pattern>/JSPF</url-pattern>
+    <servlet-name>Forward_Jsp</servlet-name>
+    <url-pattern>/Forward_Jsp</url-pattern>
   </servlet-mapping>
   
   <error-page>
