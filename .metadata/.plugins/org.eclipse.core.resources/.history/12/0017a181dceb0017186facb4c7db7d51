@@ -1,0 +1,68 @@
+﻿<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>MY XHTML</title>
+<style type="text/css">
+	ul,li{
+		padding:0;
+		margin:0;
+	}
+	.slider{
+		list-style:none;
+	}
+	.slider li{
+		width:400px;
+		height:300px;
+		border:2px solid red;
+		display:none;
+	}
+	.slider .show{
+		display:block;
+	}
+</style>
+<script type="text/javascript">
+	var interval=1000;//间隔时间1秒
+	var timer;//定期轮播图片的定时器
+	var index=0;//保存轮播图片的序号
+	//启动定时器
+	function startTimer(){
+		if(!timer){
+			timer=setInterval(function(){
+		var ul=document.getElementById("slider");
+		//判断ul是否存在	
+		if(!ul){//不存在，直接返回结束方法
+			return;
+		}
+		//ul存在，找到了ul元素
+		var allLi=ul.getElementsByTagName("li");
+		//先关闭所有图片的显示
+			for(var i=0;i<allLi.length;i++){
+				allLi[i].className="";
+			}
+		//显示下一张图片
+		index++;
+		allLi[index%allLi.length].className="show";
+			},interval);
+		}
+	}
+		function stopTimer(){
+			if(timer){//如果timer存在，就是清理掉定时器
+				clearInterval(timer);
+				timer=null;
+			}
+		}
+</script>
+   </head>
+   <body onload="startTimer()"><!--在页面加载完毕后立马调用startTimer()方法-->
+     <h2>广告轮播效果图</h2>
+	<ul class ="slider" id="slider"style=" border:2px solid blue"
+		onmouseover="stopTimer()"
+		onmouseout="startTimer()"
+	>
+		<li class="show"><a href="#"><img src="images/3.jpg"></a></li>
+		<li><a href="#"><img 						src="images/8.jpg"></a></li>
+		<li><a href="#"><img 						src="images/a.jpg"></a></li>
+	</ul>
+   </body>
+</html>

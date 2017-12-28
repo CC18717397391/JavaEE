@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xmlns:web="http://java.sun.com/xml/ns/javaee"  
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+version="2.5">
+  <servlet>
+    <servlet-name>HelloServlet_url_pattern</servlet-name>
+    <servlet-class>servlet.HelloServlet_url_pattern</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServlet_url_pattern</servlet-name>
+    <url-pattern>/HUP</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Forward_ServletOut</servlet-name>
+    <servlet-class>servlet.HelloServletOut</servlet-class>
+    <init-param>
+      <param-name>computer</param-name>
+      <param-value>LENOVO</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Forward_ServletOut</servlet-name>
+    <url-pattern>/Forward_ServletOut</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Forward_Jsp</servlet-name>
+    <jsp-file>/Forward_Jsp.jsp</jsp-file>
+    <init-param>
+      <param-name>computer</param-name>
+      <param-value>LENOVO</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Forward_Jsp</servlet-name>
+    <url-pattern>/Forward_Jsp</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+    <error-code>404</error-code>
+    <location>/Error.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.NullPointerException</exception-type>
+    <location>/Error.jsp</location>
+  </error-page>
+</web-app>
