@@ -1,0 +1,15 @@
+package com.yizhan.artical;
+
+import java.util.List;
+
+import com.yizhan.util.DbTool;
+
+public class ArticalDaoImpl implements ArticalDao {
+
+	@Override
+	public List<Artical> queryAllArtical() {
+		String sql = "SELECT * FROM artical;";
+		return DbTool.getObjectList(sql, Artical.class, new String[]{});
+	}
+
+}

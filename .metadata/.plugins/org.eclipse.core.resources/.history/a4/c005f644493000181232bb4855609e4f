@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <display-name>Spring MVC Study</display-name>
+  
+  <!-- 本页面内容属于官方规定，理解即可，理解即可，理解即可
+  		web.xml文件是启动web服务时，初始化的配置信息
+  	        项目启动初始化顺序为从上到下 ，先初始化加载spring,再加载springmvc
+  	        项目启动完毕之后，第36行的 / 负责拦截所有http的requset请求，转交给31行的springmvc配置文件处理
+  -->
+  <!-- 通过listener监听器配置web服务加载spring框架 -->
+  <context-param>
+ 		<param-name>contextConfigLocation</param-name>	<!-- 官方 -->
+		<param-value>/WEB-INF/configs/spring/spring.xml</param-value>	<!-- 指向spring的配置文件 -->
+  </context-param>
+  <listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener <!-- 官方：spring框架加载器 -->					
+		</listener-class>
+  </listener>
+  
+  <!-- 通过servlet标签加载springmvc框架【此处servlet仅是使用标签】 -->
+  <!-- 此处servlet标签和servlet-mapping标签映射 -->
+  <servlet>	
+		<servlet-name>mvc-dispatcher</servlet-name>	<!-- 和下方servlet-name必须相同 -->			
+		<servlet-class> org.springframework.web.servlet.DispatcherServlet</servlet-class><!-- 官方 -->
+		
+		<init-param>
+          <param-name>contextConfigLocation</param-name>	<!--官方 -->
+          <param-value>/WEB-INF/configs/spring/springmvc-dispatcher.xml</param-value><!-- 指向springmvc的配置文件 -->	
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>mvc-dispatcher</servlet-name>
+		<url-pattern>/</url-pattern>  <!-- /的意思是拦截所有访问的request请求，然后映射给上面的springmvc配置文件处理 -->
+  </servlet-mapping>
+  
+  <!-- filter过滤器：解决中文乱码【官方】 -->
+  <filter>
+   		<filter-name>EncodingFilter</filter-name> <!-- 对应下方的filter-name -->
+   		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+	   	<init-param>
+		   <param-name>encoding</param-name>
+		   <param-value>utf8</param-value>		<!-- utf-8编码 -->
+	   	</init-param>
+  </filter>
+  <filter-mapping>
+   		<filter-name>EncodingFilter</filter-name>
+   		<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- 设置项目的欢迎页 -->
+  
+	
+</web-app>

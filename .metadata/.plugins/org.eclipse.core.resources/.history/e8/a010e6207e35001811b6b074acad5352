@@ -1,0 +1,70 @@
+package com.yizhan.user;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.yizhan.image.Image;
+import com.yizhan.util.DateUtil;
+import com.yizhan.util.DbTool;
+
+@Controller		
+@RequestMapping("/user")
+public class LearnController {
+	
+	/**
+	 * 添加学员
+	 */
+	@RequestMapping(value="/users", method=RequestMethod.POST)
+	public @ResponseBody Map<String, Object> addImage(@RequestParam(value= "name", required = true) String name,
+			@RequestParam(value= "company", required = true) String company,
+			@RequestParam(value= "img_url", required = true) String img_url,
+			@RequestParam(value= "job", required = true) String job,
+			@RequestParam(value= "salary", required = true) String salary) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Learner learner = new Learner(0,name,company,img_url,job,salary);
+		try {
+			DbTool.saveOrUpdateObject(Learner.class, "learner", learner);
+			map.put("state", "SUCCESS");
+		} catch (Exception e) {
+			e.printStackTrace();
+			map.put("state", "FAILED");
+			map.put("errorMessage", "添加失败");
+		}
+		return map;
+	}
+	
+	/**
+	 * 修改学员
+	 */
+	@RequestMapping(value="/users/{user_id}", method=RequestMethod.PUT)
+	public @ResponseBody Map<String, Object> modifyArtical(
+			@PathVariable("user_id") Integer user_id,
+			@RequestParam(value= "name", required = true) String name,
+			@RequestParam(value= "company", required = true) String company,
+			@RequestParam(value= "img_url", required = true) String img_url,
+			@RequestParam(value= "job", required = true) String job,
+			@RequestParam(value= "salary", required = true) String salary) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		try {
+			Learner learner = new Learner(user_id,name,company,img_url,job,salary);
+			DbTool.saveOrUpdateObject(Learner.class, "learner", learner);
+			map.put("state", "SUCCESS");
+		} catch (Exception e) {
+			e.printStackTrace();
+			map.put("state", "FAILED");
+			map.put("errorMessage", "修改失败");
+		}
+		return map;
+	}
+	
+	
+	
+
+}

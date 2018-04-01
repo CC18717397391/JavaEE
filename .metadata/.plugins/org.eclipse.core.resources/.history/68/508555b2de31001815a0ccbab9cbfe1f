@@ -1,0 +1,10 @@
+package com.yizhan.util;
+
+public class JSONUtil {
+
+	/**
+	 * 格式化成JsonObject对象
+	 */
+	
+	
+}

@@ -1,0 +1,58 @@
+<div id="editorArt" class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 px-0 artical-header">
+      <span class="h2">编辑文章</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 px-0">
+      <div class="form-group">
+        <label>标题：</label>
+        <input id="artTitle" type="test" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>正文：</label>
+        <script type="text/plain" style="width:100%;height:400px;" id="editor"></script>
+      </div>
+      <div class="checkbox my-20">
+        <label>
+          <input id="artHot" type="checkbox"> 是否置顶
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 px-0">
+      <button id="articalSubmit" class="btn fi-btn btn-success">发布</button>
+    </div>
+  </div>
+</div>
+<div id="listArt" class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 px-0 artical-header">
+      <span class="h2">文章列表</span>
+      <button id="createArtical" class="btn btn-default float-right">添加文章</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 px-0">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>标题</td>
+            <td width="150px">创建时间</td>
+            <td width="120px">是否置顶</td>
+            <td width="120px">操作</td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div class="page-container">
+        <ul class="pagination float-left my-0">
+        </ul>
+        <div class="page-info"></div>
+      </div>
+    </div>
+  </div>
+</div>

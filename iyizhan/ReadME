@@ -1,0 +1,18 @@
+本项目是一个spring + springmvc教学的web网站服务
+使用框架的好处是：配置文件多，需要写的java代码少
+使用MVC分层
+上面src/main/java里面写的是Model模型层和Controller控制层java代码
+下面src/main/webapp里面放的是View视图层的html或者jsp代码
+	src/main/webapp/WEB-INF是一个安全目录，只有服务器可直接调度里面的内容
+	src/main/webapp/WEB-INF/web.xml是整个web服务的根基，是启动web服务初始化配置信息
+	
+重点重点重点：翻看本项目的顺序是
+	①.先查看本文档ReadME
+	②.学习src/main/resources的理论知识
+	③.正式开始阅读项目的web.xml文件
+	④.阅读webapp/WEB-INF/configs/spring目录下面的spring和springmvc配置文件【面试不问，面试不问，面试不问】
+	⑤.阅读controller层的代码 ， 通过return返回找对应的jsp文件
+	⑥.阅读service层的代码
+	⑦.阅读model层的代码
+	
+项目启动顺序：加载web.xml文件，通过web.xml文件中的配置加载spring和springmvc的配置文件并启动spring的IOC容器扫描注解

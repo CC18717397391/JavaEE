@@ -1,0 +1,29 @@
+package com.yizhan.util;
+
+import java.sql.Connection;
+import java.util.Properties;
+
+import javax.sql.DataSource;
+
+public class DbUtil {
+	
+	//连接池对象
+	private static DataSource dataSource = null;
+	
+	//将对象和线程绑定
+	private static ThreadLocal<Connection> connLocal = new ThreadLocal<Connection>();
+	
+	static{
+		try{
+			Properties props = new Properties();
+			//加载配置参数
+			props.load(DbUtil.class.getClassLoader().getResourceAsStream("db.properties"));
+			//用dbcp组件创建DataSource对象
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
+	}
+	
+	
+	
+}

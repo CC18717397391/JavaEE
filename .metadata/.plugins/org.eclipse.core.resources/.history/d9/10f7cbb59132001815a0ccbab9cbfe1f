@@ -1,0 +1,5 @@
+package com.yizhan.login;
+
+public class PermissionDaoImpl implements PermissionDao {
+
+}

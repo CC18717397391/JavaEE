@@ -1,0 +1,47 @@
+package com.yizhan.util;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateUtil {
+
+	/**年-月-日  时：分：秒*/
+	public static String getNowDateTime(){
+		String time = new java.sql.Timestamp(new java.util.Date().getTime()).toString();
+		return time.substring(0, time.lastIndexOf("."));
+	}
+	
+	/**年-月-日*/
+	public static Date getNowDate(){
+		java.sql.Date nowDate = new java.sql.Date(System.currentTimeMillis());
+		return nowDate;
+	}
+	
+	/**获取指定格式的日期时间类型*/
+	public static String getNowDateTimeByFmt(String dateFormat){
+		Date now = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
+		String dateStr = sdf.format(now);
+		return dateStr;
+	}
+	
+	/**字符串转日期*/
+	public static Date convertToDate(String dateFormat, String dateStr){
+		SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
+		Date date = null;
+		try {
+			date = sdf.parse(dateStr);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return date;
+	}
+	
+	/**日期转字符串*/
+	
+	
+	
+	
+}

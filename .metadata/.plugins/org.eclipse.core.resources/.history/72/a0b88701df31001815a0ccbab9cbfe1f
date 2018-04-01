@@ -1,0 +1,16 @@
+package com.yizhan.util;
+
+import org.json.JSONObject;
+
+public class JSONUtil {
+
+	/**
+	 * 格式化成JsonObject对象
+	 */
+	public static JSONObject parseJSONObject(String str){
+		JSONObject jo;
+		return jo = new JSONObject(str); 
+		
+	}
+	
+}

@@ -1,0 +1,14 @@
+package com.yizhan.image;
+
+public class Image {
+
+	private int uid;
+	
+	private String img_url;
+	
+	
+
+	
+	
+	
+}

@@ -1,0 +1,466 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Microsoft Yahei", Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #333;
+  background-color: #040119;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  background-image: url(/iyizhan/src/phone/img/bg-ui.png);
+  background-size: 100% 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.header-container {
+  position: relative;
+}
+
+.header-container .nav {
+  position: relative;
+  background-image: url("/iyizhan/src/phone/img/nav.png");
+  background-size: 100% 100%;
+  height: 6rem;
+}
+
+.header-container .nav .logo-small {
+  position: absolute;
+  right: 0.5rem;
+  width: 9rem;
+  top: 0.4rem;
+}
+
+.header-container .nav .operation {
+  position: absolute;
+  left: 1rem;
+  width: 2rem;
+  top: 0.97rem;
+}
+
+.banner-img {
+  margin: -1rem 1rem 0 1rem;
+  background-color: #939393;
+  height: 17rem;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  height: 5.5rem;
+}
+
+.features-cointer {
+  display: flex;
+}
+
+.features-cointer .item {
+  width: 33.33333%;
+}
+
+.features-cointer .item .item-info {
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(/iyizhan/src/phone/img/light_1.png);
+  background-size: 100% 100%;
+  height: 8rem;
+  width: 8rem;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  line-height: 8rem;
+}
+
+.body-container {
+  position: relative;
+  letter-spacing: 0.2rem;
+  padding: 0 1rem;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-container .phone-container {
+  display: flex;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: #2f8fa7;
+}
+
+.phone-container .item {
+  flex-basis: 50%;
+  border: 1px solid #fff;
+  padding: 1rem 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mr-reversal-1 {
+  margin-right: -1rem !important;
+}
+
+.mr-reversal-2 {
+  margin-right: -2rem !important;
+}
+
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
+.mt-1-5 {
+  margin-top: 1.5rem !important;
+}
+
+.mt-reversal-3 {
+  margin-top: -3rem !important;
+}
+
+.mt-reversal-2 {
+  margin-top: -2rem !important;
+}
+
+.mt-reversal-2-4 {
+  margin-top: -2.4rem !important;
+}
+
+.mt-reversal-15 {
+  margin-top: -15rem !important;
+}
+
+.mt-0-5 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-2 {
+  margin-top: 2rem !important;
+}
+
+.mt-3 {
+  margin-top: 3rem !important;
+}
+
+.mt-4 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 7rem !important;
+}
+
+.mx-1-5 {
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.py-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.letter-spacing-0 {
+  letter-spacing: 0 !important;
+}
+
+.empty {
+  margin-top: 5rem;
+}
+
+.map-card {
+  position: relative;
+}
+
+.map-card .map-card-body {
+  padding: 1.5rem;
+  background-color: rgba(25, 77, 85, 0.6);
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+.address-container {
+  font-size: 1.6rem;
+}
+
+.address-container .title {
+  color: #009fd5;
+  font-weight: 700;
+}
+
+.address-container .info {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.map {
+  background-image: url("/iyizhan/src/phone/img/map.png");
+  background-size: 100% 100%;
+  height: 22rem;
+}
+
+.item-class {
+  padding: 1rem 2rem;
+}
+
+.item-class .item-title {
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.15rem dotted #fff;
+}
+
+.item-class .item-title .name {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.item-class .item-title .info {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+}
+
+.item-class .item-content {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.item-class .item-content .icon {
+  width: 1.5rem;
+  margin-left: 2rem;
+}
+
+.item-class .item-content .info {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  flex-grow: 1;
+}
+
+.item-class.item-class-ui {
+  background-color: #ff5f01;
+}
+
+.item-class.item-class-pm {
+  background-color: #0173ff;
+}
+
+.item-class.item-class-yw {
+  background-color: #ff010d;
+}
+
+.item-class.item-class-ps {
+  background-color: #06be50;
+}
+
+.item-container {
+  margin-top: 4rem;
+}
+
+.item-container .item-title {
+  background-color: #142052;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.item-container .item-content {
+  background-color: rgba(8, 14, 45, 0.6);
+  padding: 1.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.item-content .teacher-row {
+  display: flex;
+}
+
+.teacher-row .teacher-col {
+  width: 50%;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background-color: rgba(34, 116, 112, 0.5);
+}
+
+.teacher-row .teacher-col:first-child {
+  margin-right: 1rem;
+}
+
+.teacher-row .teacher-col:last-child {
+  margin-left: 1rem;
+}
+
+.user-img {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 3.25rem;
+  margin: 0 auto;
+}
+
+.user-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.teacher-col .teacher-name {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.teacher-col .teacher-info {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.title-1 {
+  color: #f5cc51;
+  font-size: 1.6rem;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.title-1 .mark {
+  color: #f46127;
+  background-color: #405a6c;
+  margin: 0 -0.1rem;
+}
+
+.title-2 {
+  color: #64cbdf;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.title-3 {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.strength {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  padding: 1.5rem 0;
+  border: 0.2rem dotted #48c8df;
+}
+
+.line-space {
+  display: block;
+  height: 3.5rem;
+  margin: 0 auto;
+}
+
+.company-map {
+  border: 0.2rem dotted #48c8df;
+  height: 18rem;
+  padding: 2rem;
+}
+
+.company-map img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-container {
+  margin-top: 1.5rem;
+}
+
+.user-container .user-row {
+  display: flex;
+}
+
+.user-row .user-col {
+  width: 33.33333%;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  border: 0.1rem dotted #48c8df;
+  font-weight: 700;
+}
+
+.user-col .name {
+  color: #8dcdd9;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.user-col .info {
+  color: #009fd5;
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  letter-spacing: normal;
+}
+
+.nav.nav-open {
+  background-color: #215e8d;
+  background-image: none !important;
+  text-align: center;
+  height: auto;
+  padding-top: 0.5rem;
+}
+
+.nav.nav-open .logo-small {
+  position: static;
+  width: 10rem;
+}
+
+.nav.nav-open ul {
+  color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav.nav-open ul li {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  border-top: 0.1rem solid rgba(204, 204, 204, 0.24);
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+}
+
+.hide {
+  display: none;
+}

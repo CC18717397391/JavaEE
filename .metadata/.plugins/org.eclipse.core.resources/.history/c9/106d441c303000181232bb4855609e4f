@@ -1,0 +1,103 @@
+<div id="editorArt" class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 px-0 artical-header">
+      <span class="h2">编辑文章</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 px-0">
+      <div class="form-group">
+        <label>标题：</label>
+        <input type="test" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>正文：</label>
+        <script type="text/plain" style="width:100%;height:400px;" id="editor"></script>
+      </div>
+      <div class="checkbox my-20">
+        <label>
+          <input type="checkbox"> 是否置顶
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 px-0">
+      <button class="btn fi-btn btn-success">发布</button>
+    </div>
+  </div>
+</div>
+<div id="listArt" class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 px-0 artical-header">
+      <span class="h2">文章列表</span>
+      <button id="createArtical" class="btn btn-default float-right">添加文章</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 px-0">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>标题</td>
+            <td width="150px">创建时间</td>
+            <td width="120px">是否置顶</td>
+            <td width="120px">操作</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>标题</td>
+            <td>2018/03/24 21:11:20</td>
+            <td>是</td>
+            <td artical-id="0">
+              <a class="mr-10" operation="modify">编辑</a>
+              <a operation="delete">删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td>标题</td>
+            <td>2018/03/24 21:11:20</td>
+            <td>是</td>
+            <td artical-id="1">
+              <a class="mr-10" operation="modify">编辑</a>
+              <a operation="delete">删除</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul class="pagination my-0">
+        <li>
+          <a href="#">首页</a>
+        </li>
+        <li>
+          <a href="#">&laquo;</a>
+        </li>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">...</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">5</a>
+        </li>
+        <li>
+          <a href="#">&raquo;</a>
+        </li>
+        <li>
+          <a href="#">尾页</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

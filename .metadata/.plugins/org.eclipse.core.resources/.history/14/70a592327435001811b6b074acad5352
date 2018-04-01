@@ -1,0 +1,48 @@
+package com.yizhan.image;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.yizhan.artical.Artical;
+import com.yizhan.util.DateUtil;
+import com.yizhan.util.DbTool;
+
+@Controller		
+@RequestMapping("/image")
+public class ImageController {
+	
+	
+	/**
+	 * 添加文章
+	 */
+	@RequestMapping(value="/images", method=RequestMethod.POST)
+	public @ResponseBody Map<String, Object> addArtical(@RequestParam(value= "title", required = true) String title,
+			@RequestParam(value= "cover_url", required = true) String cover_url,
+			@RequestParam(value= "content", required = true) String content) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Artical artical = new Artical(title,content,cover_url,DateUtil.getNowDateTime(),"");
+		try {
+			DbTool.saveOrUpdateObject(Artical.class, "artical", artical);
+			map.put("state", "SUCCESS");
+		} catch (Exception e) {
+			e.printStackTrace();
+			map.put("state", "FAILED");
+			map.put("errorMessage", "添加失败");
+		}
+		return map;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

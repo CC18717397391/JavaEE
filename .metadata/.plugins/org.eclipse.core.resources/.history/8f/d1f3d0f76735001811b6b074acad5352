@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>一盏课堂</title>
+  <link rel="shortcut icon" href="/iyizhan/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/iyizhan/src/phone/css/ui.css">
+  <script src="/iyizhan/src/phone/js/autoFlex.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-container">
+      <div class="nav">
+        <img class="operation" src="/iyizhan/src/phone/img/more.png">
+        <img class="logo-small" src="/iyizhan/src/phone/img/logo.png">
+      </div>
+      <div class="header-title">UI设计</div>
+      <div class="logo mt-reversal-3">
+        <img src="/iyizhan/src/phone/img/logo.png">
+      </div>
+      <div class="title-info">全面超越传统UI设计课程</div>
+      <div class="features-cointer mt-3">
+        <div class="item">
+          <div class="item-info">专业</div>
+        </div>
+        <div class="item">
+          <div class="item-info">信赖</div>
+        </div>
+        <div class="item">
+          <div class="item-info">有效</div>
+        </div>
+      </div>
+    </div>
+    <div class="body-container">
+      <div class="body-container-item mt-7">
+        <div class="title-1">UI的待遇</div>
+        <div class="title-2">移动互联网最热门的UI设计课程</div>
+        <div class="user-salary">UI学员50%&nbsp;&nbsp;平均年薪
+          <span class="salary-1">10W</span>
+        </div>
+        <div class="user-salary mt-1">UI学员20%&nbsp;&nbsp;平均年薪
+          <span class="salary-2">15W</span>
+        </div>
+        <div class="user-salary mt-1">就职于BAT&nbsp;&nbsp;平均年薪
+          <span class="salary-3">30W</span>
+        </div>
+        <div class="title-3">一盏课堂&nbsp;&nbsp;UI教育</div>
+        <div class="title-2 letter-spacing-0">9年500强企业内训到个人培训，懂企业，更懂你。</div>
+        <div class="company">
+          <img src="/iyizhan/src/phone/img/company.png">
+        </div>
+      </div>
+      <div class="space-block mt-4"></div>
+      <div class="body-container-item mt-3">
+        <div class="flex-reversal mr-reversal-1">
+          <div class="title-1">四大学习目标</div>
+        </div>
+        <div class="study-contatiner">
+          <img class="img-border" src="/iyizhan/src/phone/img/border.png">
+          <div class="study-card">
+            <div class="study-card-header">1:移动设备的设计流程是什么？</div>
+            <div class="study-card-body">
+              <div class="info">具备的能力: 熟悉iOS，Android，电商网站的设计规范、设计流程。</div>
+              <div class="content">一盏课堂攻略: 剖析iOS和Android的案例，实例讲解流程。</div>
+            </div>
+          </div>
+          <div class="study-card mt-1">
+            <div class="study-card-header">2:最科学的设计流程是什么？</div>
+            <div class="study-card-body">
+              <div class="info">具备的能力: 从用户的角度出发，分析用户，分析产品，了解UED的工作流程。</div>
+              <div class="content">一盏课堂攻略: 参加项目实践，每个同学必须生成自己的完整方案。</div>
+            </div>
+          </div>
+          <div class="study-card mt-1">
+            <div class="study-card-header">3:我不想只做设计，我要升职？</div>
+            <div class="study-card-body">
+              <div class="info">具备的能力: 需要具备一定的管理能力，并熟悉如何评审作品。</div>
+              <div class="content">一盏课堂攻略: 讲解设计评审标准，并以深圳航空和海尔的案例来对应分析。</div>
+            </div>
+          </div>
+          <div class="study-card mt-1">
+            <div class="study-card-header">4:我能提高自己的创意吗？</div>
+            <div class="study-card-body">
+              <div class="info">具备的能力: 了解如何介入到更高端的设计，并懂得如何设计出有创意的作品。</div>
+              <div class="content">一盏课堂攻略: 融入国外的设计思想，结合本土优秀案例，总结好作品的基本要素。</div>
+            </div>
+          </div>
+          <img class="img-border-bottom" src="/iyizhan/src/phone/img/border-5.png">
+        </div>
+      </div>
+      <div class="space-block reversal-img mt-4"></div>
+      <div class="body-container-item mt-3">
+        <div class="title-1">UI设计课程设置</div>
+        <div class="course-coniner mt-2">
+          <div class="course-coniner-card">
+            <div>UI设计</div>
+            <div>基础</div>
+          </div>
+          <div class="course-coniner-card">
+            <div>PS基础</div>
+            <div>完全掌握</div>
+          </div>
+          <div class="course-coniner-card card-1">Ai的使用</div>
+          <div class="course-coniner-card card-1">线性图标</div>
+        </div>
+        <div class="course-coniner mt-2">
+          <div class="course-coniner-card card-1">写实图标</div>
+          <div class="course-coniner-card">
+            <div>手机主题</div>
+            <div>设计实践</div>
+          </div>
+          <div class="course-coniner-card card-1">色彩</div>
+          <div class="course-coniner-card">
+            <div>ios手机</div>
+            <div>规范&amp;实践</div>
+          </div>
+        </div>
+        <div class="course-coniner mt-2">
+          <div class="course-coniner-card card-2">
+            <div>Android</div>
+            <div>手机</div>
+            <div>规范&amp;实践</div>
+          </div>
+          <div class="course-coniner-card">
+            <div>UI</div>
+            <div>工作流程</div>
+          </div>
+          <div class="course-coniner-card">
+            <div>Auxre</div>
+            <div>的使用</div>
+          </div>
+          <div class="course-coniner-card card-1">交互设计</div>
+        </div>
+        <div class="course-coniner mt-2">
+          <div class="course-coniner-card card-1">产品思维</div>
+          <div class="course-coniner-card card-1">Ai插画</div>
+          <div class="course-coniner-card">
+            <div>Sketch</div>
+            <div>的使用</div>
+          </div>
+          <div class="course-coniner-card card-1">网页制作</div>
+        </div>
+        <div class="course-coniner col-2 mt-2">
+          <div class="course-coniner-card card-1">产品包装 + 简历制作</div>
+          <div class="course-coniner-card card-1">面试</div>
+        </div>
+        <div class="course-more">
+          <div class="info">了解更多课程内容</div>
+        </div>
+      </div>
+      <div class="space-block mt-4"></div>
+      <div class="body-container-item mt-3">
+        <div class="flex-reversal mr-reversal-2">
+          <div class="title-1">UI设计课程设置</div>
+        </div>
+        <div class="user-card mt-1-5">
+          <div class="user-title">
+            <div class="title-info">
+              <div class="user-name">赵鹏</div>
+              <div class="user-job">京东、海航互联资深
+                <br>UI设计专家</div>
+            </div>
+            <div class="title-img img-url-zp"></div>
+          </div>
+          <div class="user-content">
+            多年设计经验及实践积累，主导京东金融、海航系列、医药行业、电商等多个大型设计项目。丰富的实践和教学经验，众多学员好评。
+          </div>
+        </div>
+        <div class="user-card mt-1-5">
+          <div class="user-title">
+            <div class="title-info">
+              <div class="user-name">曲虹臻</div>
+              <div class="user-job">腾讯、搜狗、资深UI设
+                <br>设师</div>
+            </div>
+            <div class="title-img img-url-qhz"></div>
+          </div>
+          <div class="user-content">
+            主导QQ浏览器、QQ阅读、搜狗浏览器等多款千万量级产品的UI设计，从业多年，教学经验丰富。
+          </div>
+        </div>
+        <div class="user-card mt-1-5">
+          <div class="user-title">
+            <div class="title-info">
+              <div class="user-name">班主任</div>
+              <div class="user-content">
+                全程跟踪，管理教学，班级组织，日常事务管家。你的学习鼓励师。
+              </div>
+            </div>
+            <div class="title-img img-url-bzr"></div>
+          </div>
+        </div>
+        <div class="user-card mt-1-5">
+          <div class="user-title">
+            <div class="title-info">
+              <div class="user-name">就业顾问</div>
+              <div class="user-content">
+                根据你兴趣爱好能力状况提供对口岗位面试安排，保障你高薪就业。
+              </div>
+            </div>
+            <div class="title-img img-url-jygw"></div>
+          </div>
+        </div>
+      </div>
+      <div class="space-block reversal-img mt-4"></div>
+      <div class="body-container-item mt-3">
+        <div class="title-1">学员就业</div>
+        <div class="title-4">一盏课堂和全国有近1000家大型和成长型企业保持人才制定合作</div>
+        <div class="company-1">
+          <img src="/iyizhan/src/phone/img/company.png">
+        </div>
+        <div class="student-title-1">
+          <div class="item">
+            <div class="line"></div>
+          </div>
+          <div class="info">月入过万，从一盏开始</div>
+          <div class="item">
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="student-title-2">
+          <span>累计已有</span>
+          <span class="mark">1</span>
+          <span class="mark">5</span>
+          <span class="mark">0</span>
+          <span class="mark">4</span>
+          <span>名学员高薪就业</span>
+        </div>
+        <div class="student-card mt-3">
+          <div class="student-card-info">
+            <img src="/iyizhan/src/phone/img/yff.png">
+            <div class="mt-1">杨粉粉</div>
+            <div>就职于: 泰康人寿</div>
+            <div>月薪: 12K</div>
+          </div>
+          <img class="student-card-img" src="/iyizhan/src/phone/img/yffzp.png">
+          <img class="icon-arrow" src="/iyizhan/src/phone/img/icon_arrow.png">
+        </div>
+        <div class="student-card mt-1">
+          <div class="student-card-info">
+            <img src="/iyizhan/src/phone/img/zhy.png">
+            <div class="mt-1">张海妍</div>
+            <div>就职于: 房天下</div>
+            <div>月薪: 11K</div>
+          </div>
+          <img class="student-card-img" src="/iyizhan/src/phone/img/zhyzp.png">
+          <img class="icon-arrow" src="/iyizhan/src/phone/img/icon_arrow.png">
+        </div>
+        <div class="student-card mt-1">
+          <div class="student-card-info">
+            <img src="/iyizhan/src/phone/img/yj.png">
+            <div class="mt-1">杨杰</div>
+            <div>就职于: 心怡科技</div>
+            <div>月薪: 9K</div>
+          </div>
+          <img class="student-card-img" src="/iyizhan/src/phone/img/yjzp.png">
+          <img class="icon-arrow" src="/iyizhan/src/phone/img/icon_arrow.png">
+        </div>
+        <div class="student-card mt-1">
+          <div class="student-card-info">
+            <img src="/iyizhan/src/phone/img/zq.png">
+            <div class="mt-1">张茜</div>
+            <div>就职于: 西安银创多媒体</div>
+            <div>月薪: 7K</div>
+          </div>
+          <img class="student-card-img" src="/iyizhan/src/phone/img/zqzp.png">
+          <img class="icon-arrow" src="/iyizhan/src/phone/img/icon_arrow.png">
+        </div>
+        <div class="note-container mt-2">
+          <img src="/iyizhan/src/phone/img/note-icon.png">
+          <div class="info mt-1">曾经的迷茫，在这里找到方向</div>
+          <div class="info">别犹豫，快行动起来</div>
+        </div>
+      </div>
+      <div class="map-card mt-3">
+        <img class="line-bg" src="/iyizhan/src/phone/img/line-line.png">
+        <div class="map-card-body">
+          <div class="logo">
+            <img src="/iyizhan/src/phone/img/logo.png">
+          </div>
+          <div class="address-container">
+            <div class="title">西安校区</div>
+            <div class="info mt-0-5">西安市碑林区南稍门大话南门壹中心14层（地铁二号线南稍门站D口）</div>
+            <div class="mt-0-5">电话: 029-63013580</div>
+          </div>
+          <div class="map mt-2"></div>
+          <div class="address-container mt-2">
+            <div class="title">北京校区</div>
+            <div class="info mt-0-5">北京市海淀区大钟寺中坤广场E座7层（总部）</div>
+          </div>
+        </div>
+      </div>
+      <div class="logo mt-2">
+        <img src="/iyizhan/src/phone/img/logo.png">
+      </div>
+    </div>
+    <div class="empty"></div>
+    <div class="footer-container">
+      <div class="phone-container">
+        <a href="tel://029-63013580" class="item">电话咨询</a>
+        <a class="item">在线咨询</a>
+      </div>
+    </div>
+</body>
+
+</html>

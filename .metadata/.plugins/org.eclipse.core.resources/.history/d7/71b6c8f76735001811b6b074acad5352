@@ -1,0 +1,29 @@
+<div id="passwordContainer" class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 px-0 artical-header">
+      <span class="h2">重置密码</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 px-0">
+      <div class="reset-password">
+        <div class="form-group">
+          <label>旧密码：</label>
+          <input id="oldPwd" type="password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>新密码：</label>
+          <input id="newPwd" data-toggle="tooltip" title="密码由字母、数字、英文点、下划线和星号组成，长度为6~20。" type="password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>确认密码：</label>
+          <input id="confirmPwd" data-toggle="tooltip" title="确认密码要与新密码保持一致" type="password" class="form-control">
+        </div>
+        <div class="form-group pt-10">
+          <button id="submit" class="login-btn btn btn-danger">提 交</button>
+          <div class="error"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

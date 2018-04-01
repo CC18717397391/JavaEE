@@ -1,0 +1,12 @@
+package com.yizhan.bean;
+
+public class User {
+
+	private int uid;
+	
+	private String username;
+	
+	private String password;
+	
+	private String login_time;
+}

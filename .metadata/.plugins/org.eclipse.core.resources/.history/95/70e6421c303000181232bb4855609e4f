@@ -1,0 +1,89 @@
+(function() {
+  "user strict";
+
+  function getParams(body) {
+    var params = {};
+    var items = body.split("&");
+    var temp = "";
+    $.each(items, function(index, value) {
+      temp = value.split("=");
+      params[temp[0]] = temp[1];
+    });
+    return params;
+  }
+
+  var imageObj = {
+    "uid": 1,
+    "content":
+      "简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介",
+    "img_url": "/iyizhan/mock/img/",
+    "create_time": "2018-03-24 12:30:30",
+    "update_time": "2018-03-24 12:30:30"
+  };
+  Mock.mock("/iyizhan/image/images", "get", function() {
+    var response = {
+      "state": "SUCCESS",
+      "list": []
+    };
+    var temp = {};
+    for (var index = 1; 7 > index; index++) {
+      temp = $.extend({}, imageObj);
+      temp.uid = index;
+      temp.img_url += Math.ceil(Math.random() * 3) + ".jpg";
+      response.list.push(temp);
+    }
+    return Mock.mock(response);
+  });
+  Mock.mock(/\/iyizhan\/image\/images\/\d+/, "delete", function() {
+    return Mock.mock({
+      "state": "FAILED",
+      "errorMessage": "删除失败！"
+    });
+  });
+  Mock.mock(/\/iyizhan\/image\/images\/\d+/, "get", function() {
+    var temp = $.extend({}, imageObj);
+    temp.img_url += Math.ceil(Math.random() * 3) + ".jpg";
+    return Mock.mock({
+      "state": "SUCCESS",
+      "data": temp
+    });
+  });
+
+  var userObj = {
+    "uid": 1,
+    "name": "我是名字",
+    "content":
+      "简介：1984年因获得首届香港十八区业余歌唱大赛冠军而出道。1985年发行个人首张专辑《Smile》。1993年发行的专辑《吻别》打破华语唱片在台湾的销量纪录[1]。",
+    "img_url": "/iyizhan/mock/img/",
+    "create_time": "2018-03-24 12:30:30",
+    "update_time": "2018-03-24 12:30:30"
+  };
+  Mock.mock("/iyizhan/user/users", "get", function() {
+    var response = {
+      "state": "SUCCESS",
+      "list": []
+    };
+    var temp = {};
+    for (var index = 1; 10 > index; index++) {
+      temp = $.extend({}, userObj);
+      temp.uid = index;
+      temp.img_url += Math.ceil(Math.random() * 3) + ".jpg";
+      response.list.push(temp);
+    }
+    return Mock.mock(response);
+  });
+  Mock.mock(/\/iyizhan\/user\/users\/\d+/, "delete", function() {
+    return Mock.mock({
+      "state": "FAILED",
+      "errorMessage": "删除失败！"
+    });
+  });
+  Mock.mock(/\/iyizhan\/user\/users\/\d+/, "get", function() {
+    var temp = $.extend({}, userObj);
+    temp.img_url += Math.ceil(Math.random() * 3) + ".jpg";
+    return Mock.mock({
+      "state": "SUCCESS",
+      "data": temp
+    });
+  });
+})();

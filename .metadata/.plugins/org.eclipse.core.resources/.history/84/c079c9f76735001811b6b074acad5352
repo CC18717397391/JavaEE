@@ -1,0 +1,611 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Microsoft Yahei", Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333;
+  background-color: #040119;
+  margin: 0;
+  padding: 0;
+  background-image: url(/iyizhan/src/phone/img/bg-ui.png);
+  background-size: 100% 100%;
+  text-align: justify;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.header-container {
+  position: relative;
+}
+
+.header-container .nav {
+  position: relative;
+  background-image: url("/iyizhan/src/phone/img/nav.png");
+  background-size: 100% 100%;
+  height: 6rem;
+}
+
+.header-container .nav .logo-small {
+  position: absolute;
+  right: 0.5rem;
+  width: 9rem;
+  top: 0.4rem;
+}
+
+.header-container .nav .operation {
+  position: absolute;
+  left: 1rem;
+  width: 2rem;
+  top: 0.97rem;
+}
+
+.header-container .header-title {
+  background-image: url(/iyizhan/src/phone/img/bg.png);
+  background-size: 100% 100%;
+  margin-top: -2.1rem;
+  height: 16rem;
+  color: #fff;
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2rem;
+  padding-top: 6rem;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  height: 6rem;
+}
+
+.header-container .title-info {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 0.5rem;
+  width: 21rem;
+  font-weight: 700;
+  background-image: url(/iyizhan/src/phone/img/title-info.png);
+  background-size: 100% 100%;
+}
+
+.features-cointer {
+  display: flex;
+}
+
+.features-cointer .item {
+  width: 33.33333%;
+}
+
+.features-cointer .item .item-info {
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(/iyizhan/src/phone/img/light_1.png);
+  background-size: 100% 100%;
+  height: 8rem;
+  width: 8rem;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  line-height: 8rem;
+}
+
+.body-container {
+  position: relative;
+  letter-spacing: 0.2rem;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-container .phone-container {
+  display: flex;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: #2f8fa7;
+}
+
+.phone-container .item {
+  flex-basis: 50%;
+  border: 1px solid #fff;
+  padding: 1rem 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mr-reversal-1 {
+  margin-right: -1rem !important;
+}
+
+.mr-reversal-2 {
+  margin-right: -2rem !important;
+}
+
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
+.mt-1-5 {
+  margin-top: 1.5rem !important;
+}
+
+.mt-reversal-3 {
+  margin-top: -3rem !important;
+}
+
+.mt-reversal-2 {
+  margin-top: -2rem !important;
+}
+
+.mt-0-5 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-2 {
+  margin-top: 2rem !important;
+}
+
+.mt-3 {
+  margin-top: 3rem !important;
+}
+
+.mt-4 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 7rem !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.py-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.letter-spacing-0 {
+  letter-spacing: 0 !important;
+}
+
+.map {
+  background-image: url("/iyizhan/src/phone/img/map.png");
+  background-size: 100% 100%;
+  height: 22rem;
+}
+
+.body-container-item {
+  padding: 0 1.9rem;
+}
+
+.title-1 {
+  background-image: url("/iyizhan/src/phone/img/ui-title.png");
+  background-size: 100% 100%;
+  color: #00e1fe;
+  display: inline-block;
+  padding: 1.5rem 2.5rem 1rem 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.title-2 {
+  color: #bdbdbd;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.title-3 {
+  color: #02a9bf;
+  margin: 1rem 0;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.title-4 {
+  color: #7fcbd5;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.company {
+  border: 0.15rem dotted #016477;
+  height: 18rem;
+  padding: 1rem;
+}
+
+.company img {
+  width: 100%;
+  height: 100%;
+}
+
+.company-1 {
+  background-color: rgba(2, 55, 76, 0.5);
+  height: 18rem;
+  padding: 1rem;
+}
+
+.company-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.empty {
+  margin-top: 4.69rem;
+}
+
+.user-salary {
+  border: 0.15rem dotted #016477;
+  color: #fff;
+  padding: 1.5rem 0.5rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.salary-1 {
+  color: #ffc105;
+  position: absolute;
+  right: 1.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.salary-2 {
+  color: #ff9902;
+  position: absolute;
+  right: 0.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.salary-3 {
+  color: #ff6101;
+  position: absolute;
+  right: -0.8rem;
+  bottom: -1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: #040119;
+  display: inline-block;
+  line-height: normal;
+  padding: 0 0.5rem;
+}
+
+.space-block {
+  background-image: url("/iyizhan/src/phone/img/space.png");
+  background-size: 100% 100%;
+  height: 10rem;
+}
+
+.flex-reversal {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.reversal-img {
+  transform: rotate(25deg);
+}
+
+.study-contatiner {
+  position: relative;
+  padding: 2.6rem 2.2rem 0 2.2rem;
+}
+
+.study-contatiner .img-border {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.study-contatiner .img-border-bottom {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  bottom: -2rem;
+}
+
+.study-card {
+  border: 0.15rem solid #02374c;
+}
+
+.study-card .study-card-header {
+  color: #fff;
+  background-color: rgba(2, 55, 76, 0.7);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.study-card .study-card-body {
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.study-card-body .info {
+  color: #59b4c0;
+}
+
+.study-card-body .content {
+  color: #99cfd6;
+}
+
+.course-coniner {
+  display: flex;
+  letter-spacing: 0;
+}
+
+.col-2 .course-coniner-card {
+  width: 50%;
+}
+
+.course-coniner-card {
+  width: 25%;
+  border: 0.15rem dotted #016477;
+  text-align: center;
+  font-size: 1rem;
+  color: #99cfd6;
+  margin-right: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 700;
+}
+
+.course-coniner .course-coniner-card:last-child {
+  margin-right: 0;
+}
+
+.card-1 {
+  line-height: 4.86rem;
+  padding: 0;
+}
+
+.card-2 {
+  padding: 0.1rem 0;
+}
+
+.course-more {
+  text-align: center;
+}
+
+.course-more .info {
+  display: inline-block;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.4rem;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  background: #02374c;
+  margin-top: 2rem;
+}
+
+.user-card {
+  border: 0.15rem solid #02374c;
+  padding: 1.5rem;
+  text-align: justify;
+  font-weight: 700;
+}
+
+.user-card .user-title {
+  display: flex;
+  align-items: center;
+}
+
+.user-card .title-info {
+  flex-grow: 1;
+  flex-basis: 50%;
+  margin-right: 2rem;
+}
+
+.user-card .title-img {
+  background-size: 100% 100%;
+  width: 7rem;
+  height: 7rem;
+}
+
+.img-url-zp {
+  background-image: url("/iyizhan/src/phone/img/zp.png");
+}
+
+.img-url-bzr {
+  background-image: url("/iyizhan/src/phone/img/bzr.png");
+}
+
+.img-url-qhz {
+  background-image: url("/iyizhan/src/phone/img/qhz.png");
+}
+
+.img-url-jygw {
+  background-image: url("/iyizhan/src/phone/img/jygw.png");
+}
+
+.user-card .user-name {
+  color: #fff;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.user-card .user-job {
+  font-size: 1.2rem;
+  color: #17d0e8;
+}
+.user-card .user-content {
+  margin-top: 1.5rem;
+  color: rgba(153, 207, 214, 0.8);
+  font-size: 1.1rem;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.student-title-1 {
+  color: #f5cc51;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  font-weight: 700;
+}
+
+.student-title-1 .line {
+  height: 0.4rem;
+  width: 2.2rem;
+  background-color: #496779;
+  border-radius: 0.15rem;
+  margin: 0 auto;
+}
+
+.student-title-1 .item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.student-title-2 {
+  color: #f5cc51;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+}
+
+.student-title-2 .mark {
+  color: #f46127;
+  background-color: #405a6c;
+  margin: 0 -0.1rem;
+}
+
+.student-card {
+  border: 0.15rem dashed #02374c;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+.student-card-img {
+  width: 7rem;
+}
+
+.student-card-info {
+  color: #7fcbd5;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.student-card-info img {
+  width: 4rem;
+}
+
+.icon-arrow {
+  position: absolute;
+  width: 3rem;
+  top: 4rem;
+  right: 12rem;
+}
+
+.note-container {
+  text-align: center;
+}
+
+.note-container img {
+  width: 2rem;
+}
+
+.note-container .info {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5dc7d5;
+  line-height: 3rem;
+}
+
+.map-card {
+  padding: 0 1rem;
+  position: relative;
+  font-weight: 700;
+}
+
+.map-card .line-bg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -1.15rem;
+  left: 0;
+  right: 0;
+  height: 1.7rem;
+}
+
+.map-card .map-card-body {
+  padding: 1.5rem;
+  background-color: rgba(2, 55, 76, 0.4);
+  font-size: 1.4rem;
+  color: #2298ba;
+  letter-spacing: 0.2rem;
+}
+
+.address-container {
+  font-size: 1.6rem;
+}
+
+.address-container .title {
+  color: #90d4e7;
+}
+
+.address-container .info {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.map {
+  background-image: url("/iyizhan/src/phone/img/map.png");
+  background-size: 100% 100%;
+  height: 22rem;
+}

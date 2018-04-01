@@ -1,0 +1,20 @@
+package com.yizhan.image;
+
+public class Image {
+
+	private int uid;
+	
+	private String title;
+	
+	private String content;
+	
+	private String cover_url;
+
+	private String create_time;
+	
+	private String update_time;
+
+	
+	
+	
+}

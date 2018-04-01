@@ -1,0 +1,11 @@
+package com.yizhan.artical;
+
+public class ArticalDaoImpl implements ArticalDao {
+
+	@Override
+	public int queryArticalNum() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
