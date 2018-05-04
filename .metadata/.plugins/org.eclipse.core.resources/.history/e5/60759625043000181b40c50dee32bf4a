@@ -1,8 +1,0 @@
-package com.yizhan.artical;
-
-public class Snippet {
-	public static void main(String[] args) {
-		PermissionDao
-	}
-}
-

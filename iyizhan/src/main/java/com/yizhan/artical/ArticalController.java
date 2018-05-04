@@ -44,7 +44,7 @@ public class ArticalController {
 			}
 			map.put("state", "SUCCESS");
 			map.put("list", sub);
-			map.put("total", String.valueOf(total));
+			map.put("total", total);
 		} catch (Exception e) {
 			e.printStackTrace();
 			map.put("state", "FAILED");

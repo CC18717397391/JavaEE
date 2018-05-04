@@ -23,15 +23,17 @@ public class ImageController {
 	 * 添加图片
 	 */
 	@RequestMapping(value="/images", method=RequestMethod.POST)
-	public @ResponseBody Map<String, Object> addImage(@RequestParam(value= "img_url", required = true) String img_url) {
+	public @ResponseBody Map<String, Object> addImage(@RequestParam(value= "img_url", required = true) String img_url,
+			@RequestParam(value= "url", required = true) String url) {
 		HashMap<String, Object> map = new HashMap<String, Object>();
-		if(StringUtils.isBlank(img_url)){
+		if(StringUtils.isBlank(img_url) || StringUtils.isBlank(url)){
 			map.put("state", "FAILED");
 			map.put("errorMessage", "添加失败，图片路径不能为空");
 			return map;
 		}
 		Image img = new Image();
 		img.setImg_url(img_url);
+		img.setUrl(url);
 		try {
 			DbTool.saveOrUpdateObject(Image.class, "image", img);
 			map.put("state", "SUCCESS");

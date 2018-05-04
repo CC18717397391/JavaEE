@@ -1,5 +1,0 @@
-package com.yizhan.artical;
-
-public class ArticalDaoImpl implements ArticalDao {
-
-}

@@ -5,16 +5,19 @@ public class Image {
 	private int uid;
 	
 	private String img_url;
+	
+	private String url;
 
 	public Image() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Image(int uid, String img_url) {
+	public Image(int uid, String img_url, String url) {
 		super();
 		this.uid = uid;
 		this.img_url = img_url;
+		this.url = url;
 	}
 
 	public int getUid() {
@@ -33,9 +36,19 @@ public class Image {
 		this.img_url = img_url;
 	}
 
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
 	@Override
 	public String toString() {
-		return "Image [uid=" + uid + ", img_url=" + img_url + "]";
+		return "Image [uid=" + uid + ", img_url=" + img_url + ", url=" + url + "]";
 	}
+
+	
 	
 }

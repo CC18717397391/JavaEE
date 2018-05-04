@@ -6,25 +6,25 @@ xmlns:web="http://java.sun.com/xml/ns/javaee"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
 version="2.5">
   <servlet>
-    <servlet-name>Forward_ServletJsp</servlet-name>
-    <servlet-class>servlet.HelloServletOut2</servlet-class>
+    <servlet-name>ServletService</servlet-name>
+    <servlet-class>servlet.ServletService</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Forward_ServletJsp</servlet-name>
-    <url-pattern>/Forward_ServletJsp</url-pattern>
+    <servlet-name>ServletService</servlet-name>
+    <url-pattern>/ServletService</url-pattern>
   </servlet-mapping>
   
   <servlet>
-    <servlet-name>Forward_ServletOut</servlet-name>
-    <servlet-class>servlet.HelloServletOut1</servlet-class>
+    <servlet-name>ServletOut</servlet-name>
+    <servlet-class>servlet.ServletOut</servlet-class>
     <init-param>
       <param-name>computer</param-name>
       <param-value>LENOVO</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Forward_ServletOut</servlet-name>
-    <url-pattern>/Forward_ServletOut</url-pattern>
+    <servlet-name>ServletOut</servlet-name>
+    <url-pattern>/ServletOut</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -50,7 +50,7 @@ version="2.5">
   </error-page>
   
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>Base.jsp</welcome-file>
   </welcome-file-list>
   
 </web-app>

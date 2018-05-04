@@ -1,5 +1,0 @@
-package com.yizhan.artical;
-
-public class PermissionDaoImpl implements PermissionDao {
-
-}
