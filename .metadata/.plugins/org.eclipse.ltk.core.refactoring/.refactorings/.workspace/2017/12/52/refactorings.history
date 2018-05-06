@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;4.2Servlet_Get_CharSet&amp;REG_Model&apos;" deleteContents="true" description="Delete resource &apos;4.2Servlet_Get_CharSet&amp;REG_Model&apos;" element1="/4.2Servlet_Get_CharSet&amp;REG_Model" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1514473894922"/>
-</session>
