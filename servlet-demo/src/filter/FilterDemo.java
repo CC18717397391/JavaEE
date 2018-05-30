@@ -44,6 +44,15 @@ public class FilterDemo implements Filter {
 		HttpServletResponse response = (HttpServletResponse) arg1;
 		HttpSession session = request.getSession();
 		
+		//重定向（通过request映射至web.xml）
+		//response2.sendRedirect(req.getContextPath()+"/main.jsp");
+		//转发（通过forward或者include映射至web.xml）
+		//req.getRequestDispatcher("main.jsp").forward(request, response);
+		//req.getRequestDispatcher("main.jsp").include(request, response);
+		
+		request.setCharacterEncoding("UTF-8");
+	    response.setCharacterEncoding("UTF-8");
+		
 		String permit = config.getInitParameter("permit");
 		
 		String charset = config.getInitParameter("charset");		

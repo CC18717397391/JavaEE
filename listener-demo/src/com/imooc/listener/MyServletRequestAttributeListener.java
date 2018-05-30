@@ -2,7 +2,7 @@ package com.imooc.listener;
 
 import javax.servlet.ServletRequestAttributeEvent;
 import javax.servlet.ServletRequestAttributeListener;
-
+//@WebListener("This is My Servlet 3.0 Listener")
 public class MyServletRequestAttributeListener implements ServletRequestAttributeListener {
 
 	public void attributeAdded(ServletRequestAttributeEvent servletrequestattributeevent) {

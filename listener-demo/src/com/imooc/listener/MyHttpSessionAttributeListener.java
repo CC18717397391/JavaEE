@@ -2,7 +2,7 @@ package com.imooc.listener;
 
 import javax.servlet.http.HttpSessionAttributeListener;
 import javax.servlet.http.HttpSessionBindingEvent;
-
+//@WebListener("This is My Servlet 3.0 Listener")
 public class MyHttpSessionAttributeListener implements HttpSessionAttributeListener {
 
 	public void attributeAdded(HttpSessionBindingEvent httpsessionbindingevent) {
